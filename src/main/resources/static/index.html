@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calculator Web UI</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page">
+
+	<div class="icon-badge">
+		<div class="calc-cube">
+			<div class="calc-screen">5 + 3</div>
+			<div class="calc-buttons">
+				<span></span><span></span><span></span><span></span>
+				<span></span><span></span><span></span><span></span>
+			</div>
+		</div>
+	</div>
+
+	<main class="card">
+		<header class="title-bar">
+			<h1>Calculator Web UI</h1>
+		</header>
+
+		<a class="nav-link" href="chat.html">Try natural language chat &rarr;</a>
+
+		<section class="panel">
+			<div class="col">
+				<span class="col-label">Input - A</span>
+				<input type="number" id="inputA" class="value-input" value="1" />
+			</div>
+
+			<div class="col ops-col">
+				<span class="col-label">Operations</span>
+				<div class="op-list" id="opList">
+					<label class="op-option" data-op="add">
+						<input type="radio" name="operation" value="add" />
+						<span class="op-name">ADD</span>
+						<span class="op-symbol">+</span>
+					</label>
+					<label class="op-option" data-op="subtract">
+						<input type="radio" name="operation" value="subtract" />
+						<span class="op-name">Subtract</span>
+						<span class="op-symbol">&minus;</span>
+					</label>
+					<label class="op-option" data-op="multiply">
+						<input type="radio" name="operation" value="multiply" />
+						<span class="op-name">Multiply</span>
+						<span class="op-symbol">&times;</span>
+					</label>
+					<label class="op-option" data-op="divide">
+						<input type="radio" name="operation" value="divide" />
+						<span class="op-name">Divide</span>
+						<span class="op-symbol">&divide;</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="col">
+				<span class="col-label">Input - B</span>
+				<input type="number" id="inputB" class="value-input" value="1" />
+			</div>
+		</section>
+
+		<button id="submitBtn" class="submit-btn" disabled>Select an operation</button>
+
+		<section class="result-box">
+			<div class="result-label">RESULT</div>
+			<div class="result-value" id="resultValue">&mdash;</div>
+			<div class="result-trace" id="resultTrace"></div>
+		</section>
+	</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

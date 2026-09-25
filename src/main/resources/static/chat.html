@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calc-Agent Chat</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page">
+
+	<div class="icon-badge">
+		<div class="calc-cube">
+			<div class="calc-screen">5 + 3</div>
+			<div class="calc-buttons">
+				<span></span><span></span><span></span><span></span>
+				<span></span><span></span><span></span><span></span>
+			</div>
+		</div>
+	</div>
+
+	<main class="card">
+		<header class="title-bar">
+			<h1>Calc-Agent Chat</h1>
+		</header>
+
+		<a class="nav-link" href="index.html">&larr; Manual calculator</a>
+
+		<section class="messages" id="messages">
+			<div class="empty-hint" id="emptyHint">Ask me things like "5+3", "five plus six", or "add 5 and 7".</div>
+		</section>
+
+		<form class="chat-input-row" id="chatForm">
+			<input type="text" id="chatInput" class="chat-input" placeholder="Type a calculation..." autocomplete="off" />
+			<button type="submit" class="send-btn" id="sendBtn">Send</button>
+		</form>
+	</main>
+</div>
+<script src="js/chat.js"></script>
+</body>
+</html>

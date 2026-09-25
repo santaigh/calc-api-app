@@ -1,0 +1,110 @@
+{
+	"info": {
+		"name": "calc-api-app",
+		"description": "Calculator REST APIs (add, subtract, multiply, divide) for calc-api-app.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8091"
+		}
+	],
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"a\": 2,\n  \"b\": 3\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/calc/add",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "calc", "add"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subtract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"a\": 5,\n  \"b\": 3\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/calc/subtract",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "calc", "subtract"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"a\": 4,\n  \"b\": 3\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/calc/multiply",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "calc", "multiply"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Divide",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"a\": 7,\n  \"b\": 2\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/calc/divide",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "calc", "divide"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Divide by zero (400)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"a\": 7,\n  \"b\": 0\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/calc/divide",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "calc", "divide"]
+				}
+			},
+			"response": []
+		}
+	]
+}
