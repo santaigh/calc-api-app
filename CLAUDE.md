@@ -15,7 +15,7 @@ gradlew.bat build      # compile + 32 tests
 gradlew.bat bootRun    # http://localhost:8091  (index.html = manual calculator, chat.html = chat)
 ```
 
-Not a git repository — there is no undo for deleted files; back up before removing any.
+Git: https://github.com/santaigh/calc-api-app (public), branch `main`. Commit identity is set in this repo only (`santaigh`). Never commit `application-local.yml` -- it holds the API key.
 
 ## What it is
 
